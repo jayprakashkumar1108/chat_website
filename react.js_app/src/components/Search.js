@@ -68,6 +68,7 @@ const Search = ({filteredFun, addFriend}) => {
 
 return(
     <div className="search">
+        <div className="autocomplete">
         <Autocomplete
             freeSolo
             disableClearable
@@ -87,6 +88,7 @@ return(
                 />
               )}
         />
+        </div>
         <div className="right">
             <button id="search-btn" onClick={handleSubmit} alt="search button">🔍</button>
             <button id="add-btn" onClick={handleClickToAddFriend} alt="add friend button">➕</button>
